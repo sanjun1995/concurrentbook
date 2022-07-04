@@ -17,7 +17,7 @@ public class CFutureMain4 {
 		return para / 0;
 	}
 
-	public static void main(String[] args) throws InterruptedException,ExecutionException {
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		CompletableFuture<Void> fu = CompletableFuture
 				.supplyAsync(() -> calc(50))
 				.exceptionally(ex -> {

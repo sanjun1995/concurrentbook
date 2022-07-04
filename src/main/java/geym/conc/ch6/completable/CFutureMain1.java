@@ -32,6 +32,7 @@ public class CFutureMain1 {
         new Thread(new AskThread(future)).start();
         // 模拟长时间其他调用
         Thread.sleep(1000);
+        System.out.println("wait");
         // 告知完成结果
         future.complete(60);
     }

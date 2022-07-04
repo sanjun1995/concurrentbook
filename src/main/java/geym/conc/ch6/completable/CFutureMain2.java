@@ -27,6 +27,7 @@ public class CFutureMain2 {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         final CompletableFuture<Integer> future =
                 CompletableFuture.supplyAsync(() -> calc(50));
+        System.out.println("wait");
         System.out.println(future.get());
     }
 }
